@@ -76,15 +76,12 @@
     margin-top: -220px;
     z-index: 9;
     position: relative;
+    
 }
-.section-one .inner-wrap{
-    display: flex;
-    justify-content: space-around;
-}
-.section-one .inner-wrap .inner-box{
-    width: 30%;   
+.section-one .inner-box{
+    
     display: block;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
     border-radius: 20px;
     padding: 30px;
@@ -100,6 +97,7 @@ vertical-align: middle;
     background-color: var(--four);
     border-radius:45%; 
     color: black;
+    padding: 20px;
 }
 .section-one .inner-title{
     font-weight: 500;
@@ -124,12 +122,6 @@ vertical-align: middle;
     background-color: var(--five);
 }
 
-@media (min-width: 992px){
-.section-one .inner-box .col-lg-4 {
-        
-    
-    }
-}
 /* End Section-one */
 /* section-two */
 .section-two{
@@ -188,7 +180,7 @@ vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 90vh;
+    height: auto;
     align-items: center;
     margin-bottom: 60px;
 }
@@ -251,7 +243,6 @@ vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
     align-items: center;
     margin-bottom: 60px;
 }
@@ -308,7 +299,6 @@ vertical-align: middle;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 90vh;
         align-items: center;
       
     }
@@ -445,6 +435,10 @@ vertical-align: middle;
 /* section-eight */
 .section-eight{
     margin-bottom: 60px;
+
+}
+.section-eight img{
+    width: 100%;
 }
 .section-eight .col-lg-12 .inner-title{
     font-weight: 500;
@@ -502,8 +496,8 @@ vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 90vh;
     align-items: center;
+    padding-bottom: 30px;
 }
 .section-nine .col-lg-12 .inner-title{
     font-weight: 500;
@@ -557,7 +551,7 @@ vertical-align: middle;
 /* End section-nine */
 .footer .icon{
     display: flex;
-   margin-left: 420px;
+    justify-content: center;
 }
 .footer .icon i{
     margin: 10px;
@@ -584,3 +578,44 @@ vertical-align: middle;
     padding: 30px 0;
     background-color: #9d5bd9;
 }
+/* Reponsive ------*/
+/* Header */
+@media  (max-width:991px) { 
+    .header .header-menu{
+        display: none;
+    }
+    .section-six{
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .section-eight .inner-wrap{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 575px){
+    .section-one{
+        padding-top: 60px;
+    }
+    section-four{
+        height: auto;
+    }
+    .section-seven .box p::after {
+       display: none;
+    }
+    .section-eight .box{
+        padding: 30px 0px;
+    }
+    .section-four{
+        padding: 30px 0;
+    }
+    .section-nine{
+        padding: 30px 0;
+    }
+}
+/* End header */
